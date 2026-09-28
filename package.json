@@ -32,8 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-modal-next-example",
-    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
+    "clean": "del-cli android/build lib",
     "prepare": "bob build",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -63,7 +62,7 @@
     "@eslint/js": "^9.39.5",
     "@react-native/babel-preset": "0.86.2",
     "@react-native/eslint-config": "0.86.2",
-    "@release-it/conventional-changelog": "^12.0.0",
+    "@release-it/conventional-changelog": "10.0.2",
     "@types/react": "^19.2.0",
     "del-cli": "^7.0.0",
     "eslint": "^9.39.5",
@@ -71,21 +70,16 @@
     "eslint-plugin-ft-flow": "^3.0.11",
     "eslint-plugin-prettier": "^5.5.6",
     "prettier": "^3.9.6",
-    "react": "19.2.3",
-    "react-native": "0.86.2",
+    "react": "19.1.0",
+    "react-native": "0.81.1",
     "react-native-builder-bob": "^0.43.1",
-    "release-it": "^21.0.1",
-    "turbo": "^2.10.8",
-    "typescript": "^6.0.3"
+    "release-it": "19.0.4",
+    "typescript": "5.9.3"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
-  "workspaces": [
-    "example"
-  ],
-  "packageManager": "yarn@4.11.0",
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
