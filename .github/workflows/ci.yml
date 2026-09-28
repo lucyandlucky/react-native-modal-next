@@ -31,6 +31,9 @@ jobs:
       - name: Typecheck files
         run: yarn typecheck
 
+      - name: Test modal state
+        run: yarn test
+
   build-library:
     runs-on: ubuntu-latest
 
